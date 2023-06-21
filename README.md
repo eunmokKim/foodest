@@ -117,3 +117,4 @@ app:
     authorizedRedirectUris:
       - http://localhost:3000/oauth/redirect
 ```
+# spring-oauth-sample
