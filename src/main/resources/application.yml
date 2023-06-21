@@ -41,12 +41,6 @@ spring:
           scope:
             - email
             - profile
-        facebook:
-          clientId: '{페이스북 client-id}'
-          clientSecret: '{페이스북 client-secret}'
-          scope:
-            - email
-            - public_profile
         naver:
           clientId: '{네이버 client-id}'
           clientSecret: '{네이버 client-secret}'
