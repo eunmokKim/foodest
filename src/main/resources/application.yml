@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/oauth_login_tutorial?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: 3082
     hikari:
       pool-name: jpa-hikari-pool
       maximum-pool-size: 5
@@ -36,14 +36,14 @@ spring:
     oauth2.client:
       registration:
         google:
-          clientId: '{구글 client-id}'
-          clientSecret: '{구글 client-secret}'
+          clientId: '568377119559-m5c2598p8t8efmkccvmcqi0q607ahk25.apps.googleusercontent.com'
+          clientSecret: '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'
           scope:
             - email
             - profile
         naver:
-          clientId: '{네이버 client-id}'
-          clientSecret: '{네이버 client-secret}'
+          clientId: 'zwHX0vS2yrtKvQsr4uZm'
+          clientSecret: 'VISdnuU1wR'
           clientAuthenticationMethod: post
           authorizationGrantType: authorization_code
           redirectUri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
@@ -53,8 +53,8 @@ spring:
             - profile_image
           clientName: Naver
         kakao:
-          clientId: '{카카오 client-id}'
-          clientSecret: '{카카오 client-secret}'
+          clientId: 'b4a634495a6ef2b7b58477b992524055'
+          clientSecret: 'Sep2Bk9KI7kLc3mFerP6e1lYx8hmoMC3'
           clientAuthenticationMethod: post
           authorizationGrantType: authorization_code
           redirectUri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
@@ -75,6 +75,11 @@ spring:
           tokenUri: https://kauth.kakao.com/oauth/token
           userInfoUri: https://kapi.kakao.com/v2/user/me
           userNameAttribute: id
+
+#로길설정
+logging:
+  level:
+    root: INFO
 
 # cors 설정
 cors:
